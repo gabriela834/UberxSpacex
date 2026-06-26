@@ -1,0 +1,20 @@
+@media (min-width:1280px){
+
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+        background:#0B1020;
+    }
+
+    .container{
+        width:430px;
+        height:932px;
+        border:10px solid #222;
+        border-radius:35px;
+        overflow:hidden;
+        box-shadow:0 20px 60px rgba(0,0,0,.5);
+    }
+
+}
