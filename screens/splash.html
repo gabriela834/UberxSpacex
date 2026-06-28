@@ -10,34 +10,112 @@
     <link rel="stylesheet" href="../css/responsive.css">
 
     <title>UberX SpaceX</title>
-</head>
 
+    <style>
+        .phone-frame {
+            width: 100%;
+            max-width: 430px;
+            height: 100vh;
+            max-height: 932px;
+            margin: 20px auto;
+            background: #0A0F1C;
+            border: 14px solid #111;
+            border-radius: 48px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.65);
+        }
+
+        .splash {
+            height: 100%;
+            background: linear-gradient(180deg, #0F0B1F, #1A0B2E, #0A0719);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .splash::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 35%, rgba(108, 99, 255, 0.22), transparent 75%);
+        }
+
+        .splash-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .splash-logo {
+            filter: drop-shadow(0 0 55px rgba(108, 99, 255, 0.75));
+            animation: logoFloat 8s ease-in-out infinite;
+        }
+
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .splash__subtitle {
+            color: #BFC5D2;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+        }
+
+        .splash-skip {
+            color: rgba(255,255,255,0.75);
+            font-size: 15.5px;
+            padding: 14px 40px;
+            border: 1.5px solid rgba(255,255,255,0.35);
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.4s;
+        }
+
+        .splash-skip:hover {
+            background: rgba(108, 99, 255, 0.25);
+            border-color: #6C63FF;
+            color: white;
+        }
+    </style>
+</head>
 <body>
 
-    <div class="container">
+    <div class="phone-frame">
+        <div class="splash">
+            <div class="splash-content">
+                <svg class="splash-logo" width="320" height="190" viewBox="0 0 320 190" fill="none"
+                    <!-- Línea orbital gris curva -->
+                    <path d="M70 155 Q 125 65 235 125" 
+                          stroke="#888888" 
+                          stroke-width="6" 
+                          stroke-opacity="0.85" 
+                          fill="none" 
+                          stroke-linecap="round"/>
+                    <!-- Glow sutil -->
+                    <path d="M70 155 Q 125 65 235 125" 
+                          stroke="#6C63FF" 
+                          stroke-width="11" 
+                          stroke-opacity="0.18" 
+                          fill="none" 
+                          stroke-linecap="round"/>
+                    
+                    <text x="160" y="115" text-anchor="middle" fill="#ffffff" font-family="Eurostile" font-size="72" font-weight="900" letter-spacing="-4">UBER X</text>
+                </svg>
 
-        <header>
-        </header>
+                <p class="splash__subtitle">Preparing your space ride...</p>
 
-        <main class="splash">
-
-            <h1 class="splash__title">
-                UBERX
-            </h1>
-
-            <p class="splash__subtitle">
-                Preparing your space ride...
-            </p>
-
-            <a href="home.html" class="btn">
-                Continue
-            </a>
-
-        </main>
-
-        <footer>
-        </footer>
-
+                <a href="home.html" class="splash-skip">Tap anywhere to continue</a>
+            </div>
+        </div>
     </div>
 
 </body>
