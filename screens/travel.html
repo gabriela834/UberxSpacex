@@ -26,27 +26,60 @@
 
         <main class="travel-main">
             <section class="space-map">
-                <img src="../assets/route-map.png" alt="Live route map between Earth Dock and Mars Gate" class="route-image">
-                <div class="map-label map-label-start">Earth Dock</div>
-                <div class="map-label map-label-end">Mars Gate</div>
+                <img src="../assets/route-map.png" alt="Live route map" class="route-image">
+                <div class="map-label map-label-start">Earth Dock 4</div>
+                <div class="map-label map-label-end">Mars Gate A7</div>
                 <div class="ship">🚀</div>
             </section>
 
-            <section class="trip-panel card">
-                <div class="trip-row">
-                    <span class="text-secondary">Departure</span>
-                    <strong>18:40, Dock 4</strong>
+            <!-- BOTTOM SHEET -->
+            <input type="checkbox" id="sheet-toggle" class="sheet-toggle">
+
+            <label for="sheet-toggle" class="sheet-header">
+                <span>Next Launch • 18:40 • 42 min</span>
+                <span class="chevron">↓</span>
+            </label>
+
+            <div class="bottom-sheet">
+                <div class="sheet-content">
+                    <!-- Opciones de naves con radio buttons -->
+                    <label class="ship-option">
+                        <input type="radio" name="ship" value="890" checked>
+                        <img src="../assets/hero-orbit.png" alt="Crew Dragon">
+                        <div>
+                            <h3>Crew Dragon</h3>
+                            <p class="text-secondary">Comfort Plus • Express</p>
+                        </div>
+                        <strong class="price-tag">$890</strong>
+                    </label>
+
+                    <label class="ship-option">
+                        <input type="radio" name="ship" value="1240">
+                        <img src="../assets/destination-mars.png" alt="Starliner">
+                        <div>
+                            <h3>Starliner</h3>
+                            <p class="text-secondary">Business Orbit</p>
+                        </div>
+                        <strong class="price-tag">$1,240</strong>
+                    </label>
+
+                    <label class="ship-option">
+                        <input type="radio" name="ship" value="680">
+                        <img src="../assets/destination-moon.png" alt="Dream Chaser">
+                        <div>
+                            <h3>Dream Chaser</h3>
+                            <p class="text-secondary">Solo Pod</p>
+                        </div>
+                        <strong class="price-tag">$680</strong>
+                    </label>
                 </div>
-                <div class="trip-row">
-                    <span class="text-secondary">Arrival</span>
-                    <strong>19:22, Gate A7</strong>
+
+                <!-- Swipe to Confirm -->
+                <div class="swipe-container">
+                    <input type="range" id="swipe" min="0" max="100" value="0">
+                    <a href="booking.html" class="swipe-label">Swipe to Confirm Booking</a>
                 </div>
-                <div class="trip-row">
-                    <span class="text-secondary">Cabin</span>
-                    <strong>Comfort Plus</strong>
-                </div>
-                <a href="booking.html" class="btn">Book this route</a>
-            </section>
+            </div>
         </main>
 
         <footer class="bottom-nav">
