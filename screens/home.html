@@ -12,106 +12,130 @@
     <title>Home | UberX SpaceX</title>
 </head>
 <body>
+    <div class="container app-shell">
+        <header class="home-header">
+            <div class="user-info">
+                <div class="avatar"></div>
+                <div>
+                    <p class="eyebrow">Good morning</p>
+                    <h2>Gabriela</h2>
+                </div>
+            </div>
 
-    <div class="phone-frame">
-        <div class="home-content">
+            <a href="receipt.html" class="notification">🔔</a>
+        </header>
 
-            <!-- Header -->
-            <header class="home-header">
-                <div class="user-info">
-                    <div class="avatar" style="background: url('../Pictures/Astronauta.png') center/cover;"></div>
+        <main class="home-content">
+            <section class="hero-card card">
+                <img src="../assets/hero-orbit.png" alt="Orbital route from Earth to Mars" class="hero-image">
+                <div class="hero-overlay"></div>
+                <h3>Next launch window opens at 18:40</h3>
+                <p class="text-secondary">Earth Dock 4 to Mars Arcology with comfort cabin priority.</p>
+
+                <div class="route-stats">
                     <div>
-                        <p class="text-secondary">Good Morning 👋</p>
-                        <h2>Gabriela</h2>
+                        <span>ETA</span>
+                        <strong>42 min</strong>
+                    </div>
+                    <div>
+                        <span>Cabins</span>
+                        <strong>12</strong>
+                    </div>
+                    <div>
+                        <span>Status</span>
+                        <strong>Clear</strong>
                     </div>
                 </div>
-                <div class="notification">🔔</div>
-            </header>
-
-            <!-- Security Banner -->
-            <section class="security-banner">
-                <div class="banner-text">
-                    <h3>Always Wear Your Helmet</h3>
-                    <p class="text-secondary">When Traveling In Space</p>
-                    <p class="safe-link">About Safe Space Flight →</p>
-                </div>
-                <img src="../Pictures/Astronauta.png" alt="Astronaut" class="banner-image">
             </section>
 
-            <!-- Quick Actions -->
-            <a href="travel.html" class="action-card">
-                        <span class="action-icon">🚀</span>
-                        <p>Travel</p>
-                    </a>
-                
-                    <a href="#" class="action-card">
-                        <span class="action-icon">🌍</span>
-                        <p>Explore</p>
-                    </a>
-                
-                    <a href="booking.html" class="action-card">
-                        <span class="action-icon">📅</span>
-                        <p>Book</p>
-                    </a>
+            <section class="quick-actions">
+                <a href="travel.html" class="action-card">
+                    <span class="action-icon">🚀</span>
+                    <p>Travel</p>
+                </a>
+
+                <a href="payment-methods.html" class="action-card">
+                    <span class="action-icon">💳</span>
+                    <p>Pay</p>
+                </a>
+
+                <a href="booking.html" class="action-card">
+                    <span class="action-icon">📅</span>
+                    <p>Book</p>
+                </a>
             </section>
 
-            <!-- Search -->
             <section class="search-box">
-                <input type="search" placeholder="Where to...?">
-                <span class="time-filter">Now ▼</span>
+                <span>⌕</span>
+                <input type="search" placeholder="Search destination">
+                <span>🕒</span>
             </section>
 
-            <!-- Popular Destinations -->
             <section class="destinations">
-                <h3>Popular Destinations</h3>
-                
-                <div class="destination-card">
-                    <img src="../Pictures/Tierra.png" alt="Earth" class="planet">
-                    <div>
-                        <h4>Earth</h4>
-                        <p class="text-secondary">Solar System, Planet 4</p>
-                    </div>
-                </div>
+                <h3 class="section-title">Popular Destinations <span>Live fares</span></h3>
 
-                <div class="destination-card">
-                    <img src="../Pictures/Marte.png" alt="Mars" class="planet">
-                    <div>
-                        <h4>Mars</h4>
-                        <p class="text-secondary">Solar System, Planet 5</p>
-                    </div>
-                </div>
+                <div class="destination-list">
+                    <a href="booking.html" class="destination-card">
+                        <img src="../assets/destination-earth.png" alt="Earth Central" class="destination-thumb">
+                        <div class="destination-meta">
+                            <h4>Earth Central</h4>
+                            <p class="text-secondary">Low orbit shuttle</p>
+                        </div>
+                        <strong class="price-tag">$320</strong>
+                    </a>
 
-                <div class="destination-card">
-                    <img src="../Pictures/Estacion.png" alt="ISS" class="planet">
-                    <div>
-                        <h4>International Space Station</h4>
-                        <p class="text-secondary">Low Earth Orbit</p>
-                    </div>
-                </div>
+                    <a href="booking.html" class="destination-card">
+                        <img src="../assets/destination-mars.png" alt="Mars Arcology" class="destination-thumb">
+                        <div class="destination-meta">
+                            <h4>Mars Arcology</h4>
+                            <p class="text-secondary">Express transfer gate</p>
+                        </div>
+                        <strong class="price-tag">$890</strong>
+                    </a>
 
-                <div class="destination-card">
-                    <img src="../Pictures/Luna.png" alt="Moon" class="planet">
-                    <div>
-                        <h4>Moon</h4>
-                        <p class="text-secondary">Earth's Satellite</p>
-                    </div>
+                    <a href="booking.html" class="destination-card">
+                        <img src="../assets/destination-moon.png" alt="Lunar South Port" class="destination-thumb">
+                        <div class="destination-meta">
+                            <h4>Lunar South Port</h4>
+                            <p class="text-secondary">Business cabin ready</p>
+                        </div>
+                        <strong class="price-tag">$540</strong>
+                    </a>
+
+                    <a href="booking.html" class="destination-card">
+                        <img src="../assets/destination-station.png" alt="ISS Meridian" class="destination-thumb">
+                        <div class="destination-meta">
+                            <h4>ISS Meridian</h4>
+                            <p class="text-secondary">Docking bay available</p>
+                        </div>
+                        <strong class="price-tag">$410</strong>
+                    </a>
                 </div>
             </section>
-
-        </div>
+        </main>
 
         <!-- Bottom Navigation -->
         <footer class="bottom-nav">
             <nav>
                 <a href="home.html" class="nav-item active">
-                    🏠<span>Home</span>
+                    <strong>⌂</strong>
+                    <span>Home</span>
                 </a>
                 <a href="travel.html" class="nav-item">
-                    🚀<span>Journeys</span>
+                    <strong>↗</strong>
+                    <span>Travel</span>
+                </a>
+                <a href="booking.html" class="nav-item">
+                    <strong>□</strong>
+                    <span>Book</span>
+                </a>
+                <a href="payment-methods.html" class="nav-item">
+                    <strong>◈</strong>
+                    <span>Pay</span>
                 </a>
             </nav>
         </footer>
     </div>
-
 </body>
+
 </html>

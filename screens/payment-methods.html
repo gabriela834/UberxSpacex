@@ -1,17 +1,6 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/utils.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-
-    <title>UberX SpaceX</title>
-</head>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,26 +10,92 @@
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/responsive.css">
 
-    <title>UberX SpaceX</title>
+    <title>Payment | UberX SpaceX</title>
 </head>
 
 <body>
-
-    <div class="container">
-
-        <header>
-
+    <div class="container app-shell">
+        <header class="top-bar">
+            <a href="booking.html" class="back-btn">←</a>
+            <div>
+                <p class="eyebrow">Secure checkout</p>
+                <h1 class="page-title">Payment</h1>
+            </div>
+            <span class="status-pill">Encrypted</span>
         </header>
 
-        <main>
+        <main class="page-content">
+            <section class="payment-list card">
+                <article class="payment-method active">
+                    <div class="payment-icon">💳</div>
+                    <div>
+                        <h3>Galaxy Visa</h3>
+                        <p class="text-secondary">Ending in 2048</p>
+                    </div>
+                    <span class="radio-dot"></span>
+                </article>
 
+                <article class="payment-method">
+                    <div class="payment-icon">◈</div>
+                    <div>
+                        <h3>Orbit Credits</h3>
+                        <p class="text-secondary">Balance $1,240</p>
+                    </div>
+                    <span class="radio-dot"></span>
+                </article>
+
+                <article class="payment-method">
+                    <div class="payment-icon">⌁</div>
+                    <div>
+                        <h3>Corporate Pass</h3>
+                        <p class="text-secondary">SpaceX Partner</p>
+                    </div>
+                    <span class="radio-dot"></span>
+                </article>
+            </section>
+
+            <section>
+                <h2 class="section-title">Trip Summary <span>Earth to Mars</span></h2>
+                <div class="fare-summary card">
+                    <div class="summary-row">
+                        <span class="text-secondary">Passenger</span>
+                        <strong>Gabriela</strong>
+                    </div>
+                    <div class="summary-row">
+                        <span class="text-secondary">Cabin</span>
+                        <strong>Comfort Plus</strong>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Pay today</span>
+                        <strong>$890</strong>
+                    </div>
+                </div>
+            </section>
+
+            <a href="receipt.html" class="btn">Confirm payment</a>
         </main>
 
-        <footer>
-
+        <footer class="bottom-nav">
+            <nav>
+                <a href="home.html" class="nav-item">
+                    <strong>⌂</strong>
+                    <span>Home</span>
+                </a>
+                <a href="travel.html" class="nav-item">
+                    <strong>↗</strong>
+                    <span>Travel</span>
+                </a>
+                <a href="booking.html" class="nav-item">
+                    <strong>□</strong>
+                    <span>Book</span>
+                </a>
+                <a href="payment-methods.html" class="nav-item active">
+                    <strong>◈</strong>
+                    <span>Pay</span>
+                </a>
+            </nav>
         </footer>
-
     </div>
-
 </body>
+
 </html>

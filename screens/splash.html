@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,117 +12,16 @@
 
     <title>UberX SpaceX</title>
 
-    <style>
-        .phone-frame {
-            width: 100%;
-            max-width: 430px;
-            height: 100vh;
-            max-height: 932px;
-            margin: 20px auto;
-            background: #0A0F1C;
-            border: 14px solid #111;
-            border-radius: 48px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.65);
-        }
-
-        .splash {
-            height: 100%;
-            background: linear-gradient(180deg, #0F0B1F, #1A0B2E, #0A0719);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .splash::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 50% 35%, rgba(108, 99, 255, 0.22), transparent 75%);
-        }
-
-        .splash-content {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .splash-logo {
-            filter: drop-shadow(0 0 55px rgba(108, 99, 255, 0.75));
-            animation: logoFloat 8s ease-in-out infinite;
-        }
-
-        @keyframes logoFloat {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-
-        .splash__subtitle {
-            color: #BFC5D2;
-            font-size: 18px;
-            letter-spacing: 1.5px;
-        }
-
-        .splash-skip {
-            color: rgba(255,255,255,0.75);
-            font-size: 15.5px;
-            padding: 14px 40px;
-            border: 1.5px solid rgba(255,255,255,0.35);
-            border-radius: 50px;
-            text-decoration: none;
-            transition: all 0.4s;
-        }
-
-        .splash-skip:hover {
-            background: rgba(108, 99, 255, 0.25);
-            border-color: #6C63FF;
-            color: white;
-        }
-    </style>
-</head>
 <body>
-
-    <div class="phone-frame">
-        <div class="splash">
-            <div class="splash-content">
-                <!-- Esta linea svg son graficos vercoriales escalables o su nombre en ingles "Scalable Vector Graphics" es una forma de "Dibujar" imagenes dentro del codigo
-                 El link no sirve de nada pero es bueno dejarlo para que el navegador comprenda que no es solo html si no que tambien lleva svg-->
-                <svg class="splash-logo" width="340" height="450" viewBox="0 0 340 200" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                    <!-- 1. Línea orbital gris (la principal) la linea se parte en 3 puntos, el primer numero modifica la punta de la izquierda o tambien llamada "Posicion inicial
-                     en sentido X, el segundo numero modifica la posicion inicial en Y, el tercer numero despues de la Q
-                     modifica la curvatura central en X, el cuarto numero modifica la curva central en Y, el quinto modifica la punta final en posicion X y el sexto numero 
-                     modifica la posicion en Y de la punta final-->
-                    <path d="M110 280 Q 200 150 246 112" 
-                          stroke="#888888" 
-                          stroke-width="5" 
-                          stroke-opacity="1" 
-                          fill="none" 
-                          stroke-linecap="round"/>
-                    <!-- 2. Glow sutil (efecto de luz) -->
-                    <path d="M110 280 Q 200 150 246 112" 
-                          stroke="#6C63FF" 
-                          stroke-width="7" 
-                          stroke-opacity="0.18" 
-                          fill="none" 
-                          stroke-linecap="round"/>
-                    <!-- 3. Texto UBERX -->
-                    <text x="160" y="115" text-anchor="middle" fill="#ffffff" font-family="Eurostile" font-size="72" font-weight="900" letter-spacing="-4">UBER X</text>
-                </svg>
-
-                <p class="splash__subtitle">Preparing your space ride...</p>
-
-                <a href="home.html" class="splash-skip">Tap anywhere to continue</a>
-            </div>
-        </div>
+    <div class="container">
+        <main class="splash">
+            <img src="../assets/hero-orbit.png" alt="Orbital shuttle approaching Mars" class="splash__image">
+            <div class="splash__mark">🚀</div>
+            <h1 class="splash__title">UBERX</h1>
+            <p class="splash__subtitle">Premium rides between Earth orbit, lunar hubs, and Mars transfer gates.</p>
+            <a href="home.html" class="btn">Continue</a>
+        </main>
     </div>
-
 </body>
+
 </html>
