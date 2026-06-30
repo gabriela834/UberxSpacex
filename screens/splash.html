@@ -94,18 +94,21 @@
             <div class="splash-content">
                 <!-- Esta linea svg son graficos vercoriales escalables o su nombre en ingles "Scalable Vector Graphics" es una forma de "Dibujar" imagenes dentro del codigo
                  El link no sirve de nada pero es bueno dejarlo para que el navegador comprenda que no es solo html si no que tambien lleva svg-->
-                <svg class="splash-logo" width="320" height="190" viewBox="0 0 320 190" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                    <!-- 1. Línea orbital gris (la principal) -->
-                    <path d="M70 155 Q 125 65 235 125" 
+                <svg class="splash-logo" width="340" height="450" viewBox="0 0 340 200" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                    <!-- 1. Línea orbital gris (la principal) la linea se parte en 3 puntos, el primer numero modifica la punta de la izquierda o tambien llamada "Posicion inicial
+                     en sentido X, el segundo numero modifica la posicion inicial en Y, el tercer numero despues de la Q
+                     modifica la curvatura central en X, el cuarto numero modifica la curva central en Y, el quinto modifica la punta final en posicion X y el sexto numero 
+                     modifica la posicion en Y de la punta final-->
+                    <path d="M110 280 Q 200 150 246 112" 
                           stroke="#888888" 
-                          stroke-width="6" 
-                          stroke-opacity="0.85" 
+                          stroke-width="5" 
+                          stroke-opacity="1" 
                           fill="none" 
                           stroke-linecap="round"/>
                     <!-- 2. Glow sutil (efecto de luz) -->
-                    <path d="M70 155 Q 125 65 235 125" 
+                    <path d="M110 280 Q 200 150 246 112" 
                           stroke="#6C63FF" 
-                          stroke-width="11" 
+                          stroke-width="7" 
                           stroke-opacity="0.18" 
                           fill="none" 
                           stroke-linecap="round"/>

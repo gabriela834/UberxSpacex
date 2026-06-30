@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,55 +9,37 @@
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/responsive.css">
 
-    <title>Home | Uber X SpaceX</title>
+    <title>Home | UberX SpaceX</title>
 </head>
-
 <body>
 
-    <div class="container">
+    <div class="phone-frame">
+        <div class="home-content">
 
-        <header class="home-header">
-
-            <div class="user-info">
-
-                <div class="avatar"></div>
-
-                <div>
-                    <p class="text-secondary">Good Morning 👋</p>
-                    <h2>Gabriela</h2>
+            <!-- Header -->
+            <header class="home-header">
+                <div class="user-info">
+                    <div class="avatar" style="background: url('../Pictures/Astronauta.png') center/cover;"></div>
+                    <div>
+                        <p class="text-secondary">Good Morning 👋</p>
+                        <h2>Gabriela</h2>
+                    </div>
                 </div>
+                <div class="notification">🔔</div>
+            </header>
 
-            </div>
-
-            <div class="notification">
-                🔔
-            </div>
-
-        </header>
-
-        <main class="home-content">
-
-            <section class="security-banner card">
-
+            <!-- Security Banner -->
+            <section class="security-banner">
                 <div class="banner-text">
-            
-                    <h3>Travel Safely</h3>
-            
-                    <p class="text-secondary">
-                        Your intergalactic trip is protected.
-                    </p>
-            
+                    <h3>Always Wear Your Helmet</h3>
+                    <p class="text-secondary">When Traveling In Space</p>
+                    <p class="safe-link">About Safe Space Flight →</p>
                 </div>
-            
-                <div class="banner-image">
-                    🚀
-                </div>
+                <img src="../Pictures/Astronauta.png" alt="Astronaut" class="banner-image">
+            </section>
 
-                </section>
-
-                <section class="quick-actions">
-
-                    <a href="travel.html" class="action-card">
+            <!-- Quick Actions -->
+            <a href="travel.html" class="action-card">
                         <span class="action-icon">🚀</span>
                         <p>Travel</p>
                     </a>
@@ -72,84 +53,65 @@
                         <span class="action-icon">📅</span>
                         <p>Book</p>
                     </a>
-                
-                </section>
-
-                <section class="search-box">
-
-                    <input
-                        type="search"
-                        placeholder="Where to...?"
-                    >
-                
-                    <span>🕒</span>
-                
-                </section>
-                <section class="destinations">
-
-                    <h3>Popular Destinations</h3>
-                
-                    <div class="destination-card">
-                        <div class="planet">🌍</div>
-                
-                        <div>
-                            <h4>Earth</h4>
-                            <p class="text-secondary">Our home planet</p>
-                        </div>
-                    </div>
-                
-                    <div class="destination-card">
-                        <div class="planet">🔴</div>
-                
-                        <div>
-                            <h4>Mars</h4>
-                            <p class="text-secondary">The red planet</p>
-                        </div>
-                    </div>
-                
-                    <div class="destination-card">
-                        <div class="planet">🌕</div>
-                
-                        <div>
-                            <h4>Moon</h4>
-                            <p class="text-secondary">Earth's satellite</p>
-                        </div>
-                    </div>
-                
-                    <div class="destination-card">
-                        <div class="planet">🛰️</div>
-                
-                        <div>
-                            <h4>International Space Station</h4>
-                            <p class="text-secondary">Low Earth Orbit</p>
-                        </div>
-                    </div>
-                
-                </section>
-
-
             </section>
 
-        </main>
+            <!-- Search -->
+            <section class="search-box">
+                <input type="search" placeholder="Where to...?">
+                <span class="time-filter">Now ▼</span>
+            </section>
 
+            <!-- Popular Destinations -->
+            <section class="destinations">
+                <h3>Popular Destinations</h3>
+                
+                <div class="destination-card">
+                    <img src="../Pictures/Tierra.png" alt="Earth" class="planet">
+                    <div>
+                        <h4>Earth</h4>
+                        <p class="text-secondary">Solar System, Planet 4</p>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="../Pictures/Marte.png" alt="Mars" class="planet">
+                    <div>
+                        <h4>Mars</h4>
+                        <p class="text-secondary">Solar System, Planet 5</p>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="../Pictures/Estacion.png" alt="ISS" class="planet">
+                    <div>
+                        <h4>International Space Station</h4>
+                        <p class="text-secondary">Low Earth Orbit</p>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="../Pictures/Luna.png" alt="Moon" class="planet">
+                    <div>
+                        <h4>Moon</h4>
+                        <p class="text-secondary">Earth's Satellite</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Bottom Navigation -->
         <footer class="bottom-nav">
             <nav>
-
                 <a href="home.html" class="nav-item active">
-                    🏠
-                    <span>Home</span>
+                    🏠<span>Home</span>
                 </a>
-            
                 <a href="travel.html" class="nav-item">
-                    🚀
-                    <span>Journeys</span>
+                    🚀<span>Journeys</span>
                 </a>
-            
             </nav>
         </footer>
-
     </div>
 
 </body>
-
 </html>
