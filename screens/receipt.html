@@ -1,17 +1,6 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/utils.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-
-    <title>UberX SpaceX</title>
-</head>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,26 +10,78 @@
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/responsive.css">
 
-    <title>UberX SpaceX</title>
+    <title>Receipt | UberX SpaceX</title>
 </head>
 
 <body>
-
-    <div class="container">
-
-        <header>
-
+    <div class="container app-shell">
+        <header class="top-bar">
+            <a href="home.html" class="back-btn">←</a>
+            <div>
+                <p class="eyebrow">Booking confirmed</p>
+                <h1 class="page-title">Receipt</h1>
+            </div>
+            <span class="status-pill">Paid</span>
         </header>
 
-        <main>
+        <main class="page-content">
+            <section class="receipt-hero card">
+                <img src="../assets/hero-orbit.png" alt="Confirmed orbital journey" class="receipt-image">
+                <div class="check-mark">✓</div>
+                <h2>Journey secured</h2>
+                <p class="text-secondary">Your cabin is reserved for the 18:40 launch window.</p>
+            </section>
 
+            <section>
+                <h2 class="section-title">Details <span>#UX-48291</span></h2>
+                <div class="receipt-card card">
+                    <div class="receipt-row">
+                        <span class="text-secondary">Route</span>
+                        <strong>Earth Dock 4 → Mars Gate A7</strong>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="text-secondary">Passenger</span>
+                        <strong>Gabriela</strong>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="text-secondary">Departure</span>
+                        <strong>Jul 1, 18:40</strong>
+                    </div>
+                    <div class="receipt-row">
+                        <span class="text-secondary">Payment</span>
+                        <strong>Galaxy Visa 2048</strong>
+                    </div>
+                    <div class="receipt-row total">
+                        <span>Total paid</span>
+                        <strong>$890</strong>
+                    </div>
+                </div>
+            </section>
+
+            <a href="travel.html" class="btn">View live route</a>
         </main>
 
-        <footer>
-
+        <footer class="bottom-nav">
+            <nav>
+                <a href="home.html" class="nav-item">
+                    <strong>⌂</strong>
+                    <span>Home</span>
+                </a>
+                <a href="travel.html" class="nav-item">
+                    <strong>↗</strong>
+                    <span>Travel</span>
+                </a>
+                <a href="booking.html" class="nav-item">
+                    <strong>□</strong>
+                    <span>Book</span>
+                </a>
+                <a href="payment-methods.html" class="nav-item">
+                    <strong>◈</strong>
+                    <span>Pay</span>
+                </a>
+            </nav>
         </footer>
-
     </div>
-
 </body>
+
 </html>

@@ -1,17 +1,6 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/utils.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-
-    <title>UberX SpaceX</title>
-</head>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,26 +10,116 @@
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/responsive.css">
 
-    <title>UberX SpaceX</title>
+    <title>Booking | UberX SpaceX</title>
 </head>
 
 <body>
-
-    <div class="container">
-
-        <header>
-
+    <div class="container app-shell">
+        <header class="top-bar">
+            <a href="home.html" class="back-btn">←</a>
+            <div>
+                <p class="eyebrow">Plan a ride</p>
+                <h1 class="page-title">Book Journey</h1>
+            </div>
+            <a href="payment-methods.html" class="icon-btn">💳</a>
         </header>
 
-        <main>
+        <main class="page-content">
+            <section class="route-preview card">
+                <img src="../assets/route-map.png" alt="Earth to Mars route preview">
+                <div>
+                    <p class="eyebrow">Selected route</p>
+                    <h2>Earth Dock 4 → Mars Gate A7</h2>
+                </div>
+            </section>
 
+            <form class="form-card card">
+                <div class="field">
+                    <label for="from">From</label>
+                    <select id="from">
+                        <option>Earth Central Dock</option>
+                        <option>Lunar South Port</option>
+                        <option>ISS Meridian</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="to">To</label>
+                    <select id="to">
+                        <option>Mars Arcology</option>
+                        <option>Lunar South Port</option>
+                        <option>ISS Meridian</option>
+                    </select>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="date">Date</label>
+                        <input id="date" type="date" value="2026-07-01">
+                    </div>
+
+                    <div class="field">
+                        <label for="time">Time</label>
+                        <input id="time" type="time" value="18:40">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="cabin">Cabin</label>
+                    <select id="cabin">
+                        <option>Comfort Plus</option>
+                        <option>Business Orbit</option>
+                        <option>Solo Pod</option>
+                    </select>
+                </div>
+
+                <a href="payment-methods.html" class="btn">Continue to payment</a>
+            </form>
+
+            <section>
+                <h2 class="section-title">Fare Estimate <span>Updated now</span></h2>
+                <div class="fare-summary card">
+                    <div class="summary-row">
+                        <span class="text-secondary">Base fare</span>
+                        <strong>$620</strong>
+                    </div>
+                    <div class="summary-row">
+                        <span class="text-secondary">Docking fees</span>
+                        <strong>$84</strong>
+                    </div>
+                    <div class="summary-row">
+                        <span class="text-secondary">Cabin upgrade</span>
+                        <strong>$186</strong>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <strong>$890</strong>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer>
-
+        <footer class="bottom-nav">
+            <nav>
+                <a href="home.html" class="nav-item">
+                    <strong>⌂</strong>
+                    <span>Home</span>
+                </a>
+                <a href="travel.html" class="nav-item">
+                    <strong>↗</strong>
+                    <span>Travel</span>
+                </a>
+                <a href="booking.html" class="nav-item active">
+                    <strong>□</strong>
+                    <span>Book</span>
+                </a>
+                <a href="payment-methods.html" class="nav-item">
+                    <strong>◈</strong>
+                    <span>Pay</span>
+                </a>
+            </nav>
         </footer>
-
     </div>
-
 </body>
+
 </html>

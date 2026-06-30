@@ -1,17 +1,6 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/utils.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-
-    <title>UberX SpaceX</title>
-</head>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,26 +10,66 @@
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/responsive.css">
 
-    <title>UberX SpaceX</title>
+    <title>Travel | UberX SpaceX</title>
 </head>
 
 <body>
-
-    <div class="container">
-
-        <header>
-
+    <div class="container app-shell travel-page">
+        <header class="travel-header">
+            <a href="home.html" class="back-btn">←</a>
+            <div>
+                <p class="eyebrow">Active route</p>
+                <h1>Earth to Mars</h1>
+            </div>
+            <span class="status-pill">On time</span>
         </header>
 
-        <main>
+        <main class="travel-main">
+            <section class="space-map">
+                <img src="../assets/route-map.png" alt="Live route map between Earth Dock and Mars Gate" class="route-image">
+                <div class="map-label map-label-start">Earth Dock</div>
+                <div class="map-label map-label-end">Mars Gate</div>
+                <div class="ship">🚀</div>
+            </section>
 
+            <section class="trip-panel card">
+                <div class="trip-row">
+                    <span class="text-secondary">Departure</span>
+                    <strong>18:40, Dock 4</strong>
+                </div>
+                <div class="trip-row">
+                    <span class="text-secondary">Arrival</span>
+                    <strong>19:22, Gate A7</strong>
+                </div>
+                <div class="trip-row">
+                    <span class="text-secondary">Cabin</span>
+                    <strong>Comfort Plus</strong>
+                </div>
+                <a href="booking.html" class="btn">Book this route</a>
+            </section>
         </main>
 
-        <footer>
-
+        <footer class="bottom-nav">
+            <nav>
+                <a href="home.html" class="nav-item">
+                    <strong>⌂</strong>
+                    <span>Home</span>
+                </a>
+                <a href="travel.html" class="nav-item active">
+                    <strong>↗</strong>
+                    <span>Travel</span>
+                </a>
+                <a href="booking.html" class="nav-item">
+                    <strong>□</strong>
+                    <span>Book</span>
+                </a>
+                <a href="payment-methods.html" class="nav-item">
+                    <strong>◈</strong>
+                    <span>Pay</span>
+                </a>
+            </nav>
         </footer>
-
     </div>
-
 </body>
+
 </html>
